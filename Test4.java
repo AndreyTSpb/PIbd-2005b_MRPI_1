@@ -7,7 +7,7 @@ public class Test4{
         int qntZero = 0;
         int qntZeroTemp = 0;
         int max = 0; // максимальный элемент
-        int[] arr1; // объявление массива
+        int[] arr; // объявление массива
         int a = 0; //вспомогательная переменная
         int t = 1;
 
@@ -15,14 +15,14 @@ public class Test4{
          * Ввод с клавиатуры значений
          *  для исходного массива
          */
-        arr1 = new int[n]; // создание, то есть, выделение памяти для массива на 10 элементов типа int
-        // Scanner console = new Scanner(System.in);
-        // System.out.println("Введите последовательность из" + n + " символов:");
-        // for(int i=0; i<n; i++){
-        //     System.out.print("Укажите элемент№ "+(+i+1)+" :");
-        //     arr[i] = console.nextInt();
-        // }
-        int[] arr = {1, 2, 0, 0, 2, 300, 0, 0, 0, 3, 0, 0, 0, 3, 4, 0, 0, 7, 0, 66};
+        arr = new int[n]; // создание, то есть, выделение памяти для массива на 10 элементов типа int
+        Scanner console = new Scanner(System.in);
+        System.out.println("Введите последовательность из " + n + " символов:");
+        for(int i=0; i<n; i++){
+            System.out.print("Укажите элемент№ "+(+i+1)+" :");
+            arr[i] = console.nextInt();
+        }
+        //int[] arr = {1, 2, 0, 0, 2, 300, 0, 0, 0, 3, 0, 0, 0, 3, 4, 0, 0, 7, 0, 66};
         /**
          * Вывод получившегося массива
          */
